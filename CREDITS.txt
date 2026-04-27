@@ -1,0 +1,27 @@
+OkyAi — third-party software and attribution
+===========================================
+
+Open-source dependencies
+--------------------------
+This product is built with npm packages listed in package.json (React, Vite,
+TypeScript, Tailwind CSS, Radix UI, Framer Motion, Recharts, Lucide, etc.).
+Each dependency is used under its respective license; see node_modules/<package>/LICENSE
+after running npm install.
+
+Documentation (public/documentation/)
+-------------------------------------
+The bundled HTML documentation loads Google Fonts (Nunito). Use of those fonts
+is subject to the Google Fonts terms: https://fonts.google.com/
+
+Fonts shipped with the app (e.g. Satoshi under src/font/)
+----------------------------------------------------------
+Include the font vendor’s license file in your main download if your
+distribution requires it. Only use font files you are allowed to redistribute.
+
+Envato authors — assets and previews
+------------------------------------
+- Use only assets you own or have a license to use, including item preview images.
+- If you use watermarked Envato Market items in a preview, credit the other author
+  and link to their item (Envato Author Help Center: “What Assets Can I Use…”).
+- Item descriptions and previews: follow Envato rules on external links (support,
+  documentation, attribution, tech libraries, demos — not competing purchase funnels).
