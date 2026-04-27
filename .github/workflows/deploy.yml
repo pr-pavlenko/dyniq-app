@@ -1,0 +1,25 @@
+name: Deploy Dyniq App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          script: |
+            cd /home/dyniq.io/app
+            git pull origin main
+            npm install
+            rm -rf node_modules/.vite
+            pm2 restart dyniq-app || pm2 start npm --name dyniq-app --cwd /home/dyniq.io/app -- run dev -- --host 0.0.0.0 --port 5173
+            pm2 save
