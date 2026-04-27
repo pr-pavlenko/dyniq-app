@@ -1,10 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BadgeCheck, BatteryCharging, Camera, Droplets, ExternalLink, MapPin, RadioTower, Settings2, Wrench } from "lucide-react";
-import eraserEstImage from "@/assets/img/eraser-est.svg";
-import eraserImage from "@/assets/img/eraser.svg";
-import mesImage from "@/assets/img/mes.svg";
-
 const devices = [
   {
     id: "DYN-EST-001",
@@ -15,7 +11,7 @@ const devices = [
     battery: "86%",
     cycles: 54,
     lastPhoto: "AI image scan ready",
-    imageUrl: eraserEstImage,
+    imageUrl: "/est-cleaner.png",
     appUrl: "https://app.dyniq.io",
   },
   {
@@ -27,7 +23,7 @@ const devices = [
     battery: "72%",
     cycles: 41,
     lastPhoto: "Needs left-edge review",
-    imageUrl: eraserImage,
+    imageUrl: "/Eracer-cleaner.png",
     appUrl: "https://app.dyniq.io",
   },
   {
@@ -39,7 +35,7 @@ const devices = [
     battery: "100%",
     cycles: 33,
     lastPhoto: "No active scan",
-    imageUrl: mesImage,
+    imageUrl: "/MES-cleaner.png",
     appUrl: "https://app.dyniq.io",
   },
 ];
