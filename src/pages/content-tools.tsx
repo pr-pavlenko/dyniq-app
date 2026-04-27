@@ -11,7 +11,7 @@ const devices = [
     battery: "86%",
     cycles: 54,
     lastPhoto: "AI image scan ready",
-    imageUrl: "/eraser-est.png",
+    imageUrl: "/est-cleaner.png",
     appUrl: "https://app.dyniq.io",
   },
   {
@@ -23,7 +23,7 @@ const devices = [
     battery: "72%",
     cycles: 41,
     lastPhoto: "Needs left-edge review",
-    imageUrl: "/eraser.png",
+    imageUrl: "/Eracer-cleaner.png",
     appUrl: "https://app.dyniq.io",
   },
   {
@@ -35,7 +35,7 @@ const devices = [
     battery: "100%",
     cycles: 33,
     lastPhoto: "No active scan",
-    imageUrl: "/mes.png",
+    imageUrl: "/MES-cleaner.png",
     appUrl: "https://app.dyniq.io",
   },
 ];
